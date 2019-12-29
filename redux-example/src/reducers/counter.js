@@ -9,11 +9,9 @@ export default function counter(state = initialState, action) {
   switch (action.type) {
     case types.INCREMENT:
       return { ...state, number: state.number + 1}
-      break;
 
     case types.DECREMENT:
       return { ...state, number: state.number - 1}
-      break;
 
     default:
       return state;

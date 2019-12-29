@@ -13,14 +13,11 @@ function createWarning(funcName) {
 
 const defaultProps = {
   onPlus: createWarning('onPlus'),
-  onPlus: createWarning('onSubtract'),
-  onPlus: createWarning('onRandomizeColor')
+  onSubtract: createWarning('onSubtract'),
+  onRandomizeColor: createWarning('onRandomizeColor')
 };
 
 class Control extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
         return(
             <div>
